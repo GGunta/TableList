@@ -17,6 +17,9 @@
 		8D1D90D226B87C9D00AA333B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1D90D126B87C9D00AA333B /* Song.swift */; };
 		8D1D90D426B87E0A00AA333B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1D90D326B87E0A00AA333B /* DataManager.swift */; };
 		8D1D90D626B881B400AA333B /* DetailMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1D90D526B881B400AA333B /* DetailMusicViewController.swift */; };
+		8D24ACA026B91FE10023C6DE /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24AC9F26B91FE10023C6DE /* MovieTableViewCell.swift */; };
+		8D24ACA226B924D40023C6DE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24ACA126B924D40023C6DE /* Movie.swift */; };
+		8D24ACA426B92B600023C6DE /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D24ACA326B92B600023C6DE /* DetailMovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		8D1D90D126B87C9D00AA333B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		8D1D90D326B87E0A00AA333B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8D1D90D526B881B400AA333B /* DetailMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMusicViewController.swift; sourceTree = "<group>"; };
+		8D24AC9F26B91FE10023C6DE /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		8D24ACA126B924D40023C6DE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8D24ACA326B92B600023C6DE /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +94,9 @@
 			children = (
 				8D1D90CD26B873C100AA333B /* MusicTableViewController.swift */,
 				8D1D90D526B881B400AA333B /* DetailMusicViewController.swift */,
+				8D24ACA326B92B600023C6DE /* DetailMovieViewController.swift */,
 				8D1D90CF26B873D300AA333B /* MovieTableViewController.swift */,
+				8D24AC9F26B91FE10023C6DE /* MovieTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1D90D126B87C9D00AA333B /* Song.swift */,
+				8D24ACA126B924D40023C6DE /* Movie.swift */,
 				8D1D90D326B87E0A00AA333B /* DataManager.swift */,
 			);
 			name = Model;
@@ -183,10 +192,13 @@
 			files = (
 				8D1D90D026B873D400AA333B /* MovieTableViewController.swift in Sources */,
 				8D1D90D426B87E0A00AA333B /* DataManager.swift in Sources */,
+				8D24ACA226B924D40023C6DE /* Movie.swift in Sources */,
 				8D1D90AC26B84D0100AA333B /* AppDelegate.swift in Sources */,
 				8D1D90AE26B84D0100AA333B /* SceneDelegate.swift in Sources */,
 				8D1D90CE26B873C100AA333B /* MusicTableViewController.swift in Sources */,
 				8D1D90D626B881B400AA333B /* DetailMusicViewController.swift in Sources */,
+				8D24ACA026B91FE10023C6DE /* MovieTableViewCell.swift in Sources */,
+				8D24ACA426B92B600023C6DE /* DetailMovieViewController.swift in Sources */,
 				8D1D90D226B87C9D00AA333B /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

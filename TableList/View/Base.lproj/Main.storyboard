@@ -18,30 +18,30 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicCell" textLabel="lOz-QL-yno" detailTextLabel="nuB-vZ-OKX" style="IBUITableViewCellStyleSubtitle" id="8JH-9y-S2w">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8JH-9y-S2w" id="zsw-19-gTF">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lOz-QL-yno">
-                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <rect key="frame" x="20" y="8" width="31.5" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nuB-vZ-OKX">
-                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="20" y="27" width="48" height="15.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="rOi-Fq-Te0" kind="show" id="6v3-EC-HLr"/>
+                                    <segue destination="rOi-Fq-Te0" kind="show" identifier="detailedMusic" id="6v3-EC-HLr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,13 +74,13 @@
                                             <constraint firstAttribute="width" constant="250" id="z6u-pA-nfk"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-Zq-fdY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-Zq-fdY">
                                         <rect key="frame" x="0.0" y="340" width="250" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="68" id="GVe-Me-P56"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="QSO-AP-ck6"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -113,6 +113,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="87V-dn-Udm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -132,13 +135,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tai-0x-0la">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="270" id="tai-0x-0la" customClass="MovieTableViewCell" customModule="TableList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="270"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tai-0x-0la" id="YmL-CD-z56">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9 1:2 Weeks - 1986" translatesAutoresizingMaskIntoConstraints="NO" id="24q-nf-Oob">
+                                            <rect key="frame" x="20" y="31" width="159" height="209"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="159" id="Pfh-ay-6wH"/>
+                                                <constraint firstAttribute="height" constant="218" id="Us4-LD-3TB"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 1/2 weeks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l81-uc-4LO">
+                                            <rect key="frame" x="205" y="31" width="189" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="5q2-3H-2pX"/>
+                                                <constraint firstAttribute="height" constant="57" id="gFG-JP-b8V"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="l81-uc-4LO" secondAttribute="bottom" constant="180" id="46r-na-l3n"/>
+                                        <constraint firstItem="l81-uc-4LO" firstAttribute="trailing" secondItem="YmL-CD-z56" secondAttribute="trailingMargin" id="Kgd-ac-7Ve"/>
+                                        <constraint firstItem="l81-uc-4LO" firstAttribute="top" secondItem="YmL-CD-z56" secondAttribute="topMargin" constant="20" id="NUe-oZ-M3E"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="24q-nf-Oob" secondAttribute="bottom" constant="19" id="OvJ-yo-CtZ"/>
+                                        <constraint firstItem="24q-nf-Oob" firstAttribute="leading" secondItem="YmL-CD-z56" secondAttribute="leadingMargin" id="dxK-jU-xlJ"/>
+                                        <constraint firstItem="24q-nf-Oob" firstAttribute="top" secondItem="YmL-CD-z56" secondAttribute="topMargin" constant="20" id="oSO-Yr-Y3a"/>
+                                        <constraint firstItem="l81-uc-4LO" firstAttribute="leading" secondItem="24q-nf-Oob" secondAttribute="trailing" constant="26" id="oda-JN-QDn"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieImageView" destination="24q-nf-Oob" id="3MA-Wu-Ori"/>
+                                    <outlet property="movieLabel" destination="l81-uc-4LO" id="hIg-7I-0ic"/>
+                                    <segue destination="hfs-iB-Ouo" kind="show" identifier="detailedMovie" id="NH3-aE-T8o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -150,7 +186,55 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGi-uF-5MT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1191" y="1355"/>
+            <point key="canvasLocation" x="1189.8550724637682" y="1354.6875"/>
+        </scene>
+        <!--Detail Movie View Controller-->
+        <scene sceneID="ti6-hn-Aju">
+            <objects>
+                <viewController id="hfs-iB-Ouo" customClass="DetailMovieViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XOT-L6-CSS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="n4h-9X-8c7">
+                                <rect key="frame" x="88" y="200.5" width="238" height="495"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vWS-Ug-IJj">
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="374"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="374" id="L5G-p2-Jzg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="238" id="REo-9g-oOX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxu-Ef-xjf">
+                                        <rect key="frame" x="0.0" y="409" width="238" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="4dW-dZ-hfd"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="238" id="DXK-Tp-lAB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="muN-4m-Hzq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n4h-9X-8c7" firstAttribute="centerY" secondItem="XOT-L6-CSS" secondAttribute="centerY" id="1yp-DU-HZq"/>
+                            <constraint firstItem="n4h-9X-8c7" firstAttribute="centerX" secondItem="XOT-L6-CSS" secondAttribute="centerX" id="WPF-Zh-CGd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QkN-1F-C72"/>
+                    <connections>
+                        <outlet property="filmImageView" destination="vWS-Ug-IJj" id="T7f-zi-eYP"/>
+                        <outlet property="filmNameLabel" destination="jxu-Ef-xjf" id="TmD-xI-GeB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTY-x4-Hfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911.594202898551" y="1354.6875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JMB-km-KX0">
@@ -158,6 +242,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4FU-6n-BS2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qvg-Js-4gB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -179,6 +264,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mT1-NH-bbn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -191,6 +279,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="9 1:2 Weeks - 1986" width="293" height="500"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
