@@ -113,6 +113,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="87V-dn-Udm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.66149651239999996" green="0.96868225860000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.80102584440000002" green="1" blue="0.97324134699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                         </textAttributes>
@@ -149,30 +151,15 @@
                                                 <constraint firstAttribute="height" constant="218" id="Us4-LD-3TB"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 1/2 weeks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l81-uc-4LO">
-                                            <rect key="frame" x="205" y="31" width="189" height="48"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="5q2-3H-2pX"/>
-                                                <constraint firstAttribute="height" constant="57" id="gFG-JP-b8V"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="l81-uc-4LO" secondAttribute="bottom" constant="180" id="46r-na-l3n"/>
-                                        <constraint firstItem="l81-uc-4LO" firstAttribute="trailing" secondItem="YmL-CD-z56" secondAttribute="trailingMargin" id="Kgd-ac-7Ve"/>
-                                        <constraint firstItem="l81-uc-4LO" firstAttribute="top" secondItem="YmL-CD-z56" secondAttribute="topMargin" constant="20" id="NUe-oZ-M3E"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="24q-nf-Oob" secondAttribute="bottom" constant="19" id="OvJ-yo-CtZ"/>
                                         <constraint firstItem="24q-nf-Oob" firstAttribute="leading" secondItem="YmL-CD-z56" secondAttribute="leadingMargin" id="dxK-jU-xlJ"/>
                                         <constraint firstItem="24q-nf-Oob" firstAttribute="top" secondItem="YmL-CD-z56" secondAttribute="topMargin" constant="20" id="oSO-Yr-Y3a"/>
-                                        <constraint firstItem="l81-uc-4LO" firstAttribute="leading" secondItem="24q-nf-Oob" secondAttribute="trailing" constant="26" id="oda-JN-QDn"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="movieImageView" destination="24q-nf-Oob" id="3MA-Wu-Ori"/>
-                                    <outlet property="movieLabel" destination="l81-uc-4LO" id="hIg-7I-0ic"/>
                                     <segue destination="hfs-iB-Ouo" kind="show" identifier="detailedMovie" id="NH3-aE-T8o"/>
                                 </connections>
                             </tableViewCell>
@@ -264,6 +251,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mT1-NH-bbn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.66149651239999996" green="0.96868225860000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.80102584440000002" green="1" blue="0.97324134699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                         </textAttributes>

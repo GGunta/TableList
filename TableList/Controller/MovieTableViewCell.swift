@@ -10,12 +10,7 @@ import UIKit
 class MovieTableViewCell: UITableViewCell {
 
     @IBOutlet weak var movieImageView: UIImageView!
-    @IBOutlet weak var movieLabel: UILabel!
     
-  /*  var movie: Movie!
+ // var movie: Movie!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }*/
 }
