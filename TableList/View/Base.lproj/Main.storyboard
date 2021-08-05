@@ -59,7 +59,7 @@
         <!--Detail Music View Controller-->
         <scene sceneID="gHp-7T-R0v">
             <objects>
-                <viewController id="rOi-Fq-Te0" customClass="DetailMusicViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="rOi-Fq-Te0" customClass="DetailMusicViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MaJ-ja-5Td">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,7 +152,7 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7oD-yc-fAo">
-                                            <rect key="frame" x="211" y="73" width="183" height="123"/>
+                                            <rect key="frame" x="211" y="73.5" width="183" height="123"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdP-gp-Dqz">
                                                     <rect key="frame" x="0.0" y="0.0" width="183" height="54"/>
@@ -207,7 +207,7 @@
         <!--Detail Movie View Controller-->
         <scene sceneID="ti6-hn-Aju">
             <objects>
-                <viewController id="hfs-iB-Ouo" customClass="DetailMovieViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="hfs-iB-Ouo" customClass="DetailMovieViewController" customModule="TableList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOT-L6-CSS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
